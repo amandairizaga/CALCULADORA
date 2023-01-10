@@ -1,0 +1,11 @@
+C:\Users\amanda.ilucrecio\source\repos\Projeto18Janeiro\bin\Debug\Projeto18Janeiro.exe.config
+C:\Users\amanda.ilucrecio\source\repos\Projeto18Janeiro\bin\Debug\Projeto18Janeiro.exe
+C:\Users\amanda.ilucrecio\source\repos\Projeto18Janeiro\bin\Debug\Projeto18Janeiro.pdb
+C:\Users\amanda.ilucrecio\source\repos\Projeto18Janeiro\obj\Debug\Projeto18Janeiro.csproj.AssemblyReference.cache
+C:\Users\amanda.ilucrecio\source\repos\Projeto18Janeiro\obj\Debug\Projeto18Janeiro.csproj.SuggestedBindingRedirects.cache
+C:\Users\amanda.ilucrecio\source\repos\Projeto18Janeiro\obj\Debug\Projeto18Janeiro.Form1.resources
+C:\Users\amanda.ilucrecio\source\repos\Projeto18Janeiro\obj\Debug\Projeto18Janeiro.Properties.Resources.resources
+C:\Users\amanda.ilucrecio\source\repos\Projeto18Janeiro\obj\Debug\Projeto18Janeiro.csproj.GenerateResource.cache
+C:\Users\amanda.ilucrecio\source\repos\Projeto18Janeiro\obj\Debug\Projeto18Janeiro.csproj.CoreCompileInputs.cache
+C:\Users\amanda.ilucrecio\source\repos\Projeto18Janeiro\obj\Debug\Projeto18Janeiro.exe
+C:\Users\amanda.ilucrecio\source\repos\Projeto18Janeiro\obj\Debug\Projeto18Janeiro.pdb
