@@ -44,9 +44,10 @@
             this.botaoMult = new System.Windows.Forms.Button();
             this.botaoDiv = new System.Windows.Forms.Button();
             this.botao0 = new System.Windows.Forms.Button();
-            this.botaoCancelar = new System.Windows.Forms.Button();
-            this.botaoLimpar = new System.Windows.Forms.Button();
+            this.botaoCE = new System.Windows.Forms.Button();
+            this.botaoC = new System.Windows.Forms.Button();
             this.botaoResult = new System.Windows.Forms.Button();
+            this.botaoPonto = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // TxtResultado
@@ -60,9 +61,11 @@
             // labelOperacao
             // 
             this.labelOperacao.AutoSize = true;
-            this.labelOperacao.Location = new System.Drawing.Point(12, 9);
+            this.labelOperacao.BackColor = System.Drawing.Color.Transparent;
+            this.labelOperacao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelOperacao.Location = new System.Drawing.Point(12, 12);
             this.labelOperacao.Name = "labelOperacao";
-            this.labelOperacao.Size = new System.Drawing.Size(52, 13);
+            this.labelOperacao.Size = new System.Drawing.Size(84, 20);
             this.labelOperacao.TabIndex = 1;
             this.labelOperacao.Text = "operacao";
             // 
@@ -229,35 +232,35 @@
             this.botao0.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold);
             this.botao0.Location = new System.Drawing.Point(13, 224);
             this.botao0.Name = "botao0";
-            this.botao0.Size = new System.Drawing.Size(189, 57);
+            this.botao0.Size = new System.Drawing.Size(124, 57);
             this.botao0.TabIndex = 15;
             this.botao0.Text = "0";
             this.botao0.UseVisualStyleBackColor = false;
             this.botao0.Click += new System.EventHandler(this.botao0_Click);
             // 
-            // botaoCancelar
+            // botaoCE
             // 
-            this.botaoCancelar.BackColor = System.Drawing.Color.Silver;
-            this.botaoCancelar.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold);
-            this.botaoCancelar.Location = new System.Drawing.Point(273, 37);
-            this.botaoCancelar.Name = "botaoCancelar";
-            this.botaoCancelar.Size = new System.Drawing.Size(59, 57);
-            this.botaoCancelar.TabIndex = 16;
-            this.botaoCancelar.Text = "CE";
-            this.botaoCancelar.UseVisualStyleBackColor = false;
-            this.botaoCancelar.Click += new System.EventHandler(this.botaoCancelar_Click);
+            this.botaoCE.BackColor = System.Drawing.Color.Silver;
+            this.botaoCE.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold);
+            this.botaoCE.Location = new System.Drawing.Point(273, 37);
+            this.botaoCE.Name = "botaoCE";
+            this.botaoCE.Size = new System.Drawing.Size(59, 57);
+            this.botaoCE.TabIndex = 16;
+            this.botaoCE.Text = "CE";
+            this.botaoCE.UseVisualStyleBackColor = false;
+            this.botaoCE.Click += new System.EventHandler(this.botaoCE_Click);
             // 
-            // botaoLimpar
+            // botaoC
             // 
-            this.botaoLimpar.BackColor = System.Drawing.Color.Silver;
-            this.botaoLimpar.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold);
-            this.botaoLimpar.Location = new System.Drawing.Point(273, 100);
-            this.botaoLimpar.Name = "botaoLimpar";
-            this.botaoLimpar.Size = new System.Drawing.Size(59, 57);
-            this.botaoLimpar.TabIndex = 17;
-            this.botaoLimpar.Text = "C";
-            this.botaoLimpar.UseVisualStyleBackColor = false;
-            this.botaoLimpar.Click += new System.EventHandler(this.botaoLimpar_Click);
+            this.botaoC.BackColor = System.Drawing.Color.Silver;
+            this.botaoC.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold);
+            this.botaoC.Location = new System.Drawing.Point(273, 100);
+            this.botaoC.Name = "botaoC";
+            this.botaoC.Size = new System.Drawing.Size(59, 57);
+            this.botaoC.TabIndex = 17;
+            this.botaoC.Text = "C";
+            this.botaoC.UseVisualStyleBackColor = false;
+            this.botaoC.Click += new System.EventHandler(this.botaoC_Click);
             // 
             // botaoResult
             // 
@@ -271,14 +274,27 @@
             this.botaoResult.UseVisualStyleBackColor = false;
             this.botaoResult.Click += new System.EventHandler(this.botaoResult_Click);
             // 
+            // botaoPonto
+            // 
+            this.botaoPonto.BackColor = System.Drawing.Color.Silver;
+            this.botaoPonto.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold);
+            this.botaoPonto.Location = new System.Drawing.Point(143, 224);
+            this.botaoPonto.Name = "botaoPonto";
+            this.botaoPonto.Size = new System.Drawing.Size(59, 57);
+            this.botaoPonto.TabIndex = 19;
+            this.botaoPonto.Text = ".";
+            this.botaoPonto.UseVisualStyleBackColor = false;
+            this.botaoPonto.Click += new System.EventHandler(this.botaoPonto_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(350, 297);
+            this.ClientSize = new System.Drawing.Size(346, 305);
+            this.Controls.Add(this.botaoPonto);
             this.Controls.Add(this.botaoResult);
-            this.Controls.Add(this.botaoLimpar);
-            this.Controls.Add(this.botaoCancelar);
+            this.Controls.Add(this.botaoC);
+            this.Controls.Add(this.botaoCE);
             this.Controls.Add(this.botao0);
             this.Controls.Add(this.botaoDiv);
             this.Controls.Add(this.botaoMult);
@@ -320,9 +336,10 @@
         private System.Windows.Forms.Button botaoMult;
         private System.Windows.Forms.Button botaoDiv;
         private System.Windows.Forms.Button botao0;
-        private System.Windows.Forms.Button botaoCancelar;
-        private System.Windows.Forms.Button botaoLimpar;
+        private System.Windows.Forms.Button botaoCE;
+        private System.Windows.Forms.Button botaoC;
         private System.Windows.Forms.Button botaoResult;
+        private System.Windows.Forms.Button botaoPonto;
     }
 }
 

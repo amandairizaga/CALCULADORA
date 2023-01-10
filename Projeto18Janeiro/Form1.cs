@@ -13,9 +13,10 @@ namespace Projeto18Janeiro
 {
     public partial class Form1 : Form
     {
-        int valor1 = 0;
-        int valor2 = 0;
+        decimal valor1 = 0;
+        decimal valor2 = 0;
         string operacao = "";
+
         public Form1()
         {
             InitializeComponent();
@@ -78,7 +79,7 @@ namespace Projeto18Janeiro
         {
             if (TxtResultado.Text != "")
             {
-                valor2 = int.Parse(TxtResultado.Text, CultureInfo.InvariantCulture);
+                valor2 = decimal.Parse(TxtResultado.Text, CultureInfo.InvariantCulture);
                 if (operacao == "soma")
                 {
                     TxtResultado.Text = Convert.ToString(valor1 + valor2);
@@ -108,11 +109,12 @@ namespace Projeto18Janeiro
             {
                 MessageBox.Show("Digite um valor para efetuar uma operação");
             }
-        }
+        } 
+
         private void botaoSoma_Click(object sender, EventArgs e)
         {
             if (TxtResultado.Text != "") {
-                valor1 = int.Parse(TxtResultado.Text, CultureInfo.InvariantCulture);
+                valor1 = decimal.Parse(TxtResultado.Text, CultureInfo.InvariantCulture);
                 TxtResultado.Text = "";
                 operacao = "soma";
                 labelOperacao.Text = "+";
@@ -122,13 +124,14 @@ namespace Projeto18Janeiro
                 MessageBox.Show("Digite um valor para efetuar a soma");
             }
 
-        }
+        } 
+
 
         private void botaoSub_Click(object sender, EventArgs e)
         {
             if (TxtResultado.Text != "")
             {
-                valor1 = int.Parse(TxtResultado.Text, CultureInfo.InvariantCulture);
+                valor1 = decimal.Parse(TxtResultado.Text, CultureInfo.InvariantCulture);
                 TxtResultado.Text = "";
                 operacao = "subtracao";
                 labelOperacao.Text = "-";
@@ -144,7 +147,7 @@ namespace Projeto18Janeiro
         {
             if (TxtResultado.Text != "")
             {
-                valor1 = int.Parse(TxtResultado.Text, CultureInfo.InvariantCulture);
+            valor1 = decimal.Parse(TxtResultado.Text, CultureInfo.InvariantCulture);
             TxtResultado.Text = "";
             operacao = "multiplicacao";
             labelOperacao.Text = "x";
@@ -162,7 +165,7 @@ namespace Projeto18Janeiro
         {
             if (TxtResultado.Text != "")
             {
-                valor1 = int.Parse(TxtResultado.Text, CultureInfo.InvariantCulture);
+                valor1 = decimal.Parse(TxtResultado.Text, CultureInfo.InvariantCulture);
                 TxtResultado.Text = "";
                 operacao = "divisao";
                 labelOperacao.Text = "/";
@@ -173,7 +176,13 @@ namespace Projeto18Janeiro
             }
         }
 
-        private void botaoLimpar_Click(object sender, EventArgs e)
+     
+        private void botaoCE_Click(object sender, EventArgs e)
+        {
+            TxtResultado.Text = "";
+        }
+
+        private void botaoC_Click(object sender, EventArgs e)
         {
             TxtResultado.Text = "";
             valor1 = 0;
@@ -181,9 +190,11 @@ namespace Projeto18Janeiro
             labelOperacao.Text = "";
         }
 
-        private void botaoCancelar_Click(object sender, EventArgs e)
+        private void botaoPonto_Click(object sender, EventArgs e)
         {
-            TxtResultado.Text = "";
+            TxtResultado.Text = TxtResultado.Text + ".";
         }
     }
+
+
 }
