@@ -16,10 +16,12 @@ namespace Projeto18Janeiro
         decimal valor1 = 0;
         decimal valor2 = 0;
         string operacao = "";
+        
 
         public Form1()
         {
             InitializeComponent();
+            
         }
 
 
@@ -92,7 +94,9 @@ namespace Projeto18Janeiro
                 {
                     if (valor1 >= valor2)
                     {
+                        
                         TxtResultado.Text = Convert.ToString(valor1 / valor2);
+
                     }
                     else
                     {
@@ -180,6 +184,7 @@ namespace Projeto18Janeiro
         private void botaoCE_Click(object sender, EventArgs e)
         {
             TxtResultado.Text = "";
+            TxtResultado.ForeColor = Color.Black;
         }
 
         private void botaoC_Click(object sender, EventArgs e)
@@ -188,6 +193,7 @@ namespace Projeto18Janeiro
             valor1 = 0;
             valor2 = 0;
             labelOperacao.Text = "";
+            TxtResultado.ForeColor = Color.Black;
         }
 
         private void botaoPonto_Click(object sender, EventArgs e)
